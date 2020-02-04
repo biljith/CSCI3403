@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Intro</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <nav>
     <ul>
       <li>
-        <!-- TODO: Add link to form.html -->
-        <a>Basics</a>
+        <a href="index.html">Basics</a>
       </li>
       <li>
         <a href="#">Form</a>
@@ -28,36 +28,47 @@
     <form>
       <div>
         <label for="email">Email address:</label>
-        <!-- Insert input field for email address-->
+        <input type="email" placeholder="Enter email" id="email" required>
       </div>
       <div>
         <label for="pwd">Password:</label>
-        <!-- Insert input field for password -->
+        <input type="password" placeholder="Enter password" id="pwd" required>
       </div>
       <div>
         <label for="year">Year:</label>
-        <!-- Insert a dropdown menu for year -->
+        <select name="year" id="year">
+          <option value="freshman">Freshman</option>
+          <option value="sophomore">Sophomore</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+        </select>
       </div>
       <div>
         <label for="pwd">Gender:</label>
         <div>
           <div>
-            <!-- Insert a radiobutton for male -->
+            <label>
+              <input type="radio" name="optradio">Male
+            </label>
           </div>
           <div>
-            <!-- Insert a radiobutton for female -->
-          </div>
-          <div>
-            <!-- Insert a radiobutton for other -->
+            <label>
+              <input type="radio" name="optradio">Female</label>
+            </div>
+            <div>
+              <label>
+                <input type="radio" name="optradio">Other
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <label>
-          <!-- Add checkbox here -->
-        </label>
-      </div>
-      <!-- Add SUBMIT Button -->
+        <div>
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+
+        <button type="submit">Submit</button>
       </form>
     </div>
   </body>
